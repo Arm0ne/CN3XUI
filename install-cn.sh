@@ -1483,7 +1483,7 @@ install_x-ui() {
     fi
     local xui_script_temp="/usr/bin/x-ui-temp.$$"
     rm -f "${xui_script_temp}"
-    curl -fLRo "${xui_script_temp}" https://raw.githubusercontent.com/MHSanaei/3x-ui/main/x-ui.sh
+    curl -fLRo "${xui_script_temp}" https://raw.githubusercontent.com/Arm0ne/CN3XUI/main/x-ui.sh
     if [[ $? -ne 0 ]]; then
         rm -f "${xui_script_temp}"
         echo -e "${red}下载 x-ui.sh 失败${plain}"
